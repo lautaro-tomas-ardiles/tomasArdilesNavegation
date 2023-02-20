@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.tomasardilesnavegation.navegation.appNavegation
 import com.example.tomasardilesnavegation.screens.FristScreen
 import com.example.tomasardilesnavegation.ui.theme.TomasArdilesNavegationTheme
 
@@ -19,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TomasArdilesNavegationTheme {
                 Surface(color = MaterialTheme.colors.background) {
-                    FristScreen()
+                    appNavegation()
                 }
             }
         }
@@ -29,6 +30,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     TomasArdilesNavegationTheme {
-        FristScreen()
+        appNavegation()
     }
 }
