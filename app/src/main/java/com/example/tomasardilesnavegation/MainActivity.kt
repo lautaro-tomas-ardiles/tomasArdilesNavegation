@@ -18,12 +18,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             TomasArdilesNavegationTheme {
-                FristScreen()
+                Surface(color = MaterialTheme.colors.background) {
+                    FristScreen()
+                }
             }
         }
     }
 }
-//99
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
